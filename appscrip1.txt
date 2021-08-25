@@ -1,0 +1,130 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<stdio.h>
+//#include<conio.h>
+#include<ctype.h>
+#include<stdlib.h>
+#include<string.h>
+
+
+
+int main()
+{
+int count,r1,r,i,n,A,B;
+float score;
+char choice;
+char playername[20];
+mainhome:
+system("cls");
+printf("\t\t\tc WELCOME ");
+printf("\n\t\t     to   ");
+printf("\n\t\t  THE GAME");
+
+
+printf("\n\n\n\n\n\n\n\n\n\n\n\t\t\tResister your name:");
+gets(playername);
+
+
+system("cls");
+ 	printf("\n\n\n Press Y  to start the game!\n");
+
+
+if (toupper(getch())=='Y')
+		{
+         //clear mouseclick(wm_LNEXTPAGE);
+		    goto home;
+        }
+	else
+		{
+        goto mainhome;
+       system("cls");
+       }
+
+     home:
+     system("cls");
+     count=0;
+     for(i=1;i<=3;i++)
+     {
+    system("cls");
+     r1=i;
+
+
+     switch(r1)
+ 		{
+		case 1:
+
+		printf("\n\nWho is the best crickter in the world?");
+		printf("\n\nA.Sachin Tendulkar\t\tB.Virat Kolli\n\nC.Adam Gilchirst\t\tD.Jacques Kallis");
+		printf("\n\n select one ");
+                home1:	
+		if (toupper(getch())=='A')
+			{
+			    //printf("\n\nCorrect!!!");
+			    count++;
+			    getch();
+			    break;
+			}
+
+
+		else
+		       {
+		           printf("\n\nWrong!!! The correct answer is A.Sanchin Tendulkar");
+		           getch();
+		       break;
+		       }
+case 2:
+		printf("\n\n\nWhat are the colours  in the Indian national flag...");
+		printf("\n\nA.Orange\t\tB.White\n\nC.Yellow\t\tD.Green");
+		printf("\n\n select more than 1 ");
+                home2:
+		if (toupper(getch())==(A,B))
+			{
+			//printf("\n\nCorrect!!!");
+			count++;
+			getch();
+			break;}
+		else
+		       {
+		 printf("\n\nWrong!!! The correct answer is A.Orange ,B.White");
+		 getch();
+		 break;}
+
+}
+
+}
+
+	//clearmouseclick(wm_LNEXTPAGE);
+
+	printf("\n\n\n\t Summary");
+    
+  	printf(" %c:"playername);
+
+        printf("\n\n\n\t Here are the selected answers");
+
+
+	printf("\n\nWho is the best crickter in the world?");
+	        goto home1;
+		printf("\n\n\n\t Answer : Sachin Tendulakar\t");
+	printf("\n\nWhat are the colours in the Indian National flags...");
+		goto home2;
+		printf("\n\n\n Answer: Orange ,white");
+
+
+//to finish the game 
+
+system("cls");
+ 	printf("\n\n\n Press Finish  to End the game!\n");
+	printf("\n\n Finish\n\n");
+
+
+
+// to start  the game again 
+if (toupper(getch())=='Finish')
+		{
+		    goto mainhome;
+      		}
+      //to show past data
+	printf("\n\n On clicking History ");
+
+    return 0;
+}
